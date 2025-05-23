@@ -67,7 +67,7 @@ const SchoolOutreachSection = () => {
         </motion.div>
 
         {/* Interactive Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -87,7 +87,7 @@ const SchoolOutreachSection = () => {
               <div className="text-gray-600">{stat.label}</div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
 
         {/* Program Features with Floating Animation */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">

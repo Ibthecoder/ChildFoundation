@@ -319,7 +319,7 @@ const Home = () => {
       </section>
 
       {/* Success Stories */}
-      <section className="py-16 bg-pink-50 sm:py-20 lg:py-28">
+      {/* <section className="py-16 bg-pink-50 sm:py-20 lg:py-28">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-wider text-pink-600 uppercase bg-pink-100 rounded-full">
@@ -405,7 +405,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <br />
       <br />

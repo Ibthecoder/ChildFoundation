@@ -7,7 +7,7 @@ import aboutaImg3 from "./img3.jpg";
 import aboutaImg4 from "./img14.jpg";
 import aboutImg6 from "./aboutImg6.jpg";
 import HeroImg1 from "./HeroImg1.jpg";
-import AboutImg11 from "./AboutImg11.png";
+import AboutImg11 from "./AboutImg11.jpg";
 import schoolImg from "./schoolImg1.jpg";
 import schoolimg2 from "./schoolimg2.jpg";
 import schoolimg3 from "./schoolimg3.jpg";
