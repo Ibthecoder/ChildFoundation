@@ -7,6 +7,7 @@ import {
   schoolImg,
   schoolimg2,
   schoolimg3,
+  schoolImg4,
 } from "../assets/images/image";
 import {
   FiBook,
@@ -45,10 +46,6 @@ const SchoolOutreach = () => {
 
   return (
     <div className="bg-white">
-      <br />
-      <br />
-      <br />
-
       {/* 3D Hero Section */}
       <section className="relative h-screen overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50">
         {/* Floating 3D spheres */}
@@ -216,10 +213,10 @@ const SchoolOutreach = () => {
                   </motion.div>
                   <motion.div
                     whileHover={{ y: -5 }}
-                    className="relative h-48 rounded-xl overflow-hidden shadow-md mt-8"
+                    className="relative h-60 rounded-xl overflow-hidden shadow-md mt-8"
                   >
                     <img
-                      src="/school-talk-4.jpg"
+                      src={schoolImg4}
                       alt="Students engaged in activity"
                       className="w-full h-full object-cover"
                     />

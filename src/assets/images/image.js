@@ -1,5 +1,4 @@
 import Hero from "./Hero-img.png";
-import NewHeroImg from "./NewHeroImg.png";
 import brandlong from "./Logo.png";
 import aboutaImg from "./aboutImg.png";
 import aboutaImg1 from "./aboutImg1.png";
@@ -15,6 +14,7 @@ import schoolimg3 from "./schoolimg3.jpg";
 import youngmother1 from "./youngmother1.jpg";
 import youngmother2 from "./youngmother2.jpg";
 import youngmother3 from "./youngmother3.jpg";
+import schoolImg4 from "./schoolImg4.jpg";
 export {
   Hero,
   brandlong,
@@ -25,7 +25,6 @@ export {
   aboutaImg4,
   aboutImg6,
   HeroImg1,
-  NewHeroImg,
   AboutImg11,
   schoolImg,
   schoolimg2,
@@ -33,4 +32,5 @@ export {
   youngmother1,
   youngmother2,
   youngmother3,
+  schoolImg4,
 };

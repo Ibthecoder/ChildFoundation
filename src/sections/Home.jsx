@@ -5,7 +5,6 @@ import {
   aboutaImg2,
   aboutaImg3,
   aboutaImg4,
-  NewHeroImg,
   HeroImg1,
 } from "../assets/images/image";
 import React from "react";
