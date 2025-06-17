@@ -1,5 +1,12 @@
-import { aboutaImg, Hero } from "../assets/images/image";
+import {
+  aboutaImg,
+  Hero,
+  aboutaImg2,
+  aboutaImg3,
+  aboutaImg4,
+} from "../assets/images/image";
 import React from "react";
+import HeroSection from "./HeroSection";
 
 const Home = () => {
   return (
@@ -14,12 +21,9 @@ const Home = () => {
 
           {/* Text Content */}
           <div className="absolute inset-0 flex flex-col justify-center items-center px-4 text-center text-white">
-            {/* <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Welcome to Young Mother  & Child Haven Foundation
-            </h1> */}
             <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-snug">
               <span className="block">Welcome To Young Mother</span>
-              <span className="block text-4xl md:text-6xl  font-semibold">
+              <span className="block text-4xl md:text-6xl font-semibold">
                 &
               </span>
               <span className="block text-pink-300">
@@ -32,7 +36,46 @@ const Home = () => {
               we're by your side. Together we heal, together we grow.
             </p>
           </div>
+
+          {/* Scrolling Arrow Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg
+              className="w-8 h-8 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              ></path>
+            </svg>
+          </div>
         </div>
+
+        {/* Custom Bounce Animation */}
+        <style jsx>{`
+          .animate-bounce {
+            animation: bounce 2s infinite;
+          }
+          @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-20px);
+            }
+            60% {
+              transform: translateY(-10px);
+            }
+          }
+        `}</style>
       </section>
 
       <br />
@@ -240,7 +283,7 @@ const Home = () => {
       </section>
       {/*  */}
       {/*  */}
-      <div class="bg-gray-100">
+      <div class="">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
             <h2 class="text-2xl font-bold text-gray-900">Collections</h2>
@@ -248,7 +291,7 @@ const Home = () => {
             <div class="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-6">
               <div class="group relative">
                 <img
-                  src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-01.jpg"
+                  src={aboutaImg2}
                   alt="Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug."
                   class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
                 />
@@ -264,7 +307,7 @@ const Home = () => {
               </div>
               <div class="group relative">
                 <img
-                  src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-02.jpg"
+                  src={aboutaImg3}
                   alt="Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant."
                   class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
                 />
@@ -280,7 +323,7 @@ const Home = () => {
               </div>
               <div class="group relative">
                 <img
-                  src="https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-03.jpg"
+                  src={aboutaImg4}
                   alt="Collection of four insulated travel bottles on wooden shelf."
                   class="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
                 />
@@ -298,6 +341,137 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/*  */}
+
+      {/*  */}
+      <section className="py-16 bg-white sm:py-20 lg:py-28">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          {/* Enhanced Heading Section */}
+          <div className="text-center mb-16">
+            <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-wider text-pink-600 uppercase bg-pink-100 rounded-full">
+              Our Services
+            </span>
+            <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
+              We Serve{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
+                For People
+              </span>
+            </h1>
+            <div className="max-w-2xl mx-auto mt-6 text-xl text-gray-600">
+              Empowering communities through essential services that make a real
+              difference in people's lives.
+            </div>
+          </div>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 gap-12 text-center sm:grid-cols-2 md:grid-cols-3 lg:gap-y-16">
+            {/* Service 1 - Pure Food & Water */}
+            <div className="group transition-all duration-300 hover:-translate-y-2">
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-blue-100 transition-all duration-300 group-hover:text-blue-200"
+                  width="72"
+                  height="75"
+                  viewBox="0 0 72 75"
+                  fill="currentColor"
+                >
+                  <path d="M63.6911 28.8569C68.0911 48.8121 74.6037 61.2674 53.2349 65.9792C31.8661 70.6909 11.6224 61.2632 7.22232 41.308C2.82229 21.3528 3.6607 12.3967 25.0295 7.68503C46.3982 2.97331 59.2911 8.90171 63.6911 28.8569Z" />
+                </svg>
+                <svg
+                  className="absolute text-blue-600 w-9 h-9 transition-all duration-300 group-hover:text-blue-700 group-hover:scale-110"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-xl font-bold text-gray-900 group-hover:text-blue-600">
+                Pure Food & Water
+              </h3>
+              <p className="mt-4 text-lg text-gray-600">
+                Providing access to clean, nutritious food and safe drinking
+                water for communities in need.
+              </p>
+            </div>
+
+            {/* Service 2 - Health & Medicine */}
+            <div className="group transition-all duration-300 hover:-translate-y-2">
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-orange-100 transition-all duration-300 group-hover:text-orange-200"
+                  width="62"
+                  height="64"
+                  viewBox="0 0 62 64"
+                  fill="currentColor"
+                >
+                  <path d="M62 13.001C62 33.4355 53.9345 64.001 33.5 64.001C13.0655 64.001 0 50.435 0 30.0005C0 9.56596 2.56546 4.00021 23 4.00021C43.4345 4.00021 62 -7.43358 62 13.001Z" />
+                </svg>
+                <svg
+                  className="absolute text-orange-600 w-9 h-9 transition-all duration-300 group-hover:text-orange-700 group-hover:scale-110"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-xl font-bold text-gray-900 group-hover:text-orange-600">
+                Health & Medicine
+              </h3>
+              <p className="mt-4 text-lg text-gray-600">
+                Delivering essential medical care and health education to
+                underserved populations.
+              </p>
+            </div>
+
+            {/* Service 3 - Education */}
+            <div className="group transition-all duration-300 hover:-translate-y-2">
+              <div className="relative flex items-center justify-center mx-auto">
+                <svg
+                  className="text-green-100 transition-all duration-300 group-hover:text-green-200"
+                  width="66"
+                  height="68"
+                  viewBox="0 0 66 68"
+                  fill="currentColor"
+                >
+                  <path d="M65.5 30C65.5 50.4345 46.4345 68 26 68C5.56546 68 0 50.4345 0 30C0 9.56546 12.5655 0 33 0C53.4345 0 65.5 9.56546 65.5 30Z" />
+                </svg>
+                <svg
+                  className="absolute text-green-600 w-9 h-9 transition-all duration-300 group-hover:text-green-700 group-hover:scale-110"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="1.5"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 className="mt-8 text-xl font-bold text-gray-900 group-hover:text-green-600">
+                Education
+              </h3>
+              <p className="mt-4 text-lg text-gray-600">
+                Creating learning opportunities and educational resources for
+                children and adults alike.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/*  */}
     </>
