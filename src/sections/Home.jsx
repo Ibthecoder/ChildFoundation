@@ -7,6 +7,7 @@ import {
 } from "../assets/images/image";
 import React from "react";
 import HeroSection from "./HeroSection";
+import DonationBanner from "../components/DonationBanner";
 
 const Home = () => {
   return (
@@ -472,8 +473,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/*  */}
+      {/* <DonationBanner /> */}
     </>
   );
 };
