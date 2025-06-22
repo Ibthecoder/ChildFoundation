@@ -6,6 +6,7 @@ import {
   aboutaImg3,
   aboutaImg4,
   NewHeroImg,
+  HeroImg1,
 } from "../assets/images/image";
 import React from "react";
 import AboutUs from "./AboutUs";
@@ -78,7 +79,7 @@ const Home = () => {
           <div class="pb-8 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:pb-0">
             <div class="flex items-center justify-center h-full px-4">
               <img
-                src={NewHeroImg}
+                src={HeroImg1}
                 alt="Hero Illustration"
                 class="w-full max-w-md lg:max-w-full object-cover rounded-xl shadow-lg"
               />
