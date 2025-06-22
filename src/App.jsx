@@ -5,7 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import PageLayout from "./layouts/PageLayout";
-import { About, Contact, Gallery, Home, Story } from "./sections";
+import {
+  About,
+  Contact,
+  Gallery,
+  Home,
+  SchoolOutreach,
+  YoungMothers,
+} from "./sections";
+import Programs from "./sections/Programs";
 
 function App() {
   const router = createBrowserRouter(
@@ -14,8 +22,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="story" element={<Story />} />
+        <Route path="programs" element={<Programs />} />
         <Route path="gallery" element={<Gallery />} />
+        <Route path="schooloutreach" element={<SchoolOutreach />} />
+        <Route path="youngmothers" element={<YoungMothers />} />
       </Route>,
     ),
   );

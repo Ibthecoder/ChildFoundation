@@ -2,7 +2,18 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Gallery from "./Gallery";
-import Story from "./Story";
+import Programs from "./Programs";
 import Footer from "./Footer";
+import SchoolOutreach from "./SchoolOutreach";
+import YoungMothers from "./YoungMothers";
 
-export { Home, About, Contact, Gallery, Story, Footer };
+export {
+  Home,
+  About,
+  Contact,
+  Gallery,
+  Programs,
+  Footer,
+  SchoolOutreach,
+  YoungMothers,
+};
