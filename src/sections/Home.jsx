@@ -47,7 +47,7 @@ const Home = () => {
                 grow.
               </p>
 
-              <p class="mt-8 text-base font-bold text-gray-900">
+              {/* <p class="mt-8 text-base font-bold text-gray-900">
                 Join to get free updates every week
               </p>
 
@@ -71,7 +71,7 @@ const Home = () => {
                     Join Now
                   </button>
                 </div>
-              </form>
+              </form> */}
             </div>
           </div>
 
@@ -106,7 +106,8 @@ const Home = () => {
               </p>
             </div>
             <h2 className="mt-6 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-              Guiding Young Mothers & Children Toward a Brighter Future
+              Empowering Young Mothers & Guilding Teenage girls towards a
+              brother future
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600 sm:text-lg sm:mt-6">
               Through faith-based mentoring, life skills training, school
@@ -199,7 +200,7 @@ const Home = () => {
                   </svg>
                 </div>
                 <h3 className="mt-6 text-xl font-semibold text-center text-gray-900">
-                  Community Education
+                  Outreaches And Young Girls Empowerment
                 </h3>
                 <p className="mt-4 text-base text-center text-gray-600">
                   Workshops and resources for families about reproductive health
@@ -226,7 +227,7 @@ const Home = () => {
               </div>
 
               <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
-                Faith. Love. Empowerment.
+                Nuture. Love. Empowerment
               </h2>
 
               <p className="mt-6 text-base leading-relaxed text-gray-600 sm:text-lg">
