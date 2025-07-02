@@ -393,7 +393,7 @@ const YoungMothers = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="relative h-64 sm:h-90 md:h-90 overflow-hidden">
+                <div className="relative h-90 sm:h-72 md:h-90 overflow-hidden">
                   <img
                     src={photo.img}
                     alt={photo.alt}
