@@ -1,19 +1,10 @@
 import React from "react";
 import { aboutImg6 } from "../assets/images/image";
+import AboutUs from "./AboutUs";
 
 const About = () => {
   return (
-    
     <div className="bg-white">
-
-
-     
-
-
-      <br />
-      <br />
-      <br />
-      <br />
       {/* Hero Section */}
       <div className="relative isolate px-6 pt-10 lg:px-8 bg-white">
         {" "}
@@ -244,7 +235,7 @@ const About = () => {
                   Learn About Our Programs
                 </button>
                 <button className="px-6 py-3 border border-pink-600 text-pink-600 hover:bg-pink-50 font-medium rounded-lg transition duration-300">
-                 Contact Us
+                  Contact Us
                 </button>
               </div>
             </div>

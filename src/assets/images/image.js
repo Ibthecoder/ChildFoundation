@@ -6,9 +6,15 @@ import aboutaImg1 from "./aboutImg1.png";
 import aboutaImg2 from "./aboutImg2.jpg";
 import aboutaImg3 from "./img3.jpg";
 import aboutaImg4 from "./img14.jpg";
-import aboutImg6 from "./aboutImg6.png";
+import aboutImg6 from "./aboutImg6.jpg";
 import HeroImg1 from "./HeroImg1.jpg";
 import AboutImg11 from "./AboutImg11.png";
+import schoolImg from "./schoolImg1.jpg";
+import schoolimg2 from "./schoolimg2.jpg";
+import schoolimg3 from "./schoolimg3.jpg";
+import youngmother1 from "./youngmother1.jpg";
+import youngmother2 from "./youngmother2.jpg";
+import youngmother3 from "./youngmother3.jpg";
 export {
   Hero,
   brandlong,
@@ -21,4 +27,10 @@ export {
   HeroImg1,
   NewHeroImg,
   AboutImg11,
+  schoolImg,
+  schoolimg2,
+  schoolimg3,
+  youngmother1,
+  youngmother2,
+  youngmother3,
 };
