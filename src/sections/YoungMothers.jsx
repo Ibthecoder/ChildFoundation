@@ -329,7 +329,7 @@ const YoungMothers = () => {
       </section>
 
       {/* 🌟 STORYTELLING SECTION WITH PHOTO GALLERY */}
-      <section className="relative py-40 bg-gray-900 text-white overflow-hidden">
+      <section className="relative py-20 md:py-40 bg-gray-900 text-white overflow-hidden">
         {/* SVG Background Pattern */}
         <svg
           className="absolute inset-0 w-full h-full opacity-10"
@@ -350,25 +350,24 @@ const YoungMothers = () => {
           <rect width="100%" height="100%" fill="url(#pattern)" />
         </svg>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 md:mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="text-pink-400">Every</span> Mother Has a Story
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
               We don't just provide resources—we rewrite futures through
               personal connections.
             </p>
           </motion.div>
 
           {/* Photo Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-            {/* Replace these with your actual photos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 md:mb-20">
             {[
               {
                 img: youngmother1,
@@ -392,17 +391,19 @@ const YoungMothers = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                className="group overflow-hidden rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="relative h-[90] overflow-hidden">
+                <div className="relative h-64 sm:h-72 md:h-90 overflow-hidden">
                   <img
                     src={photo.img}
                     alt={photo.alt}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <p className="font-medium">{photo.caption}</p>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
+                    <p className="font-medium text-sm sm:text-base">
+                      {photo.caption}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -410,7 +411,7 @@ const YoungMothers = () => {
           </div>
 
           {/* Impact Stories */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 stat: "200+",
@@ -434,21 +435,22 @@ const YoungMothers = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 + 0.3 }}
-                className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10"
+                className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-xl md:rounded-2xl border border-white/10"
               >
-                <div className="text-5xl font-bold text-pink-400 mb-2">
+                <div className="text-4xl sm:text-5xl font-bold text-pink-400 mb-2">
                   {item.stat}
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-white">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-white">
                   {item.title}
                 </h3>
-                <p className="text-gray-300">{item.desc}</p>
+                <p className="text-sm sm:text-base text-gray-300">
+                  {item.desc}
+                </p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
-
       {/* 🌟 FINAL CTA WITH SVG GLOW EFFECT */}
       <section className="py-32 bg-gradient-to-br from-pink-600 to-purple-600 relative overflow-hidden">
         {/* SVG Radial Gradient Background */}
