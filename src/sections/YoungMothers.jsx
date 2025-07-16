@@ -411,7 +411,7 @@ const YoungMothers = () => {
           </div>
 
           {/* Impact Stories */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 stat: "200+",
@@ -448,7 +448,7 @@ const YoungMothers = () => {
                 </p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
       {/* 🌟 FINAL CTA WITH SVG GLOW EFFECT */}
