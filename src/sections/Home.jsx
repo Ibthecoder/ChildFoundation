@@ -171,8 +171,8 @@ const Home = () => {
                   Young Mother Support
                 </h3>
                 <p className="mt-4 text-base text-center text-gray-600">
-                  Counseling, vocational training, and childcare support for
-                  young mothers.
+                  Counseling, vocational training, childcare support, and
+                  financial assistance for young mothers.
                 </p>
                 <button className="w-full px-4 py-2 mt-6 text-sm font-medium text-white transition-colors duration-300 bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                   Get Support
