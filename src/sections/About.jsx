@@ -24,7 +24,7 @@ const About = () => {
           {" "}
           <div className="hidden sm:mb-6 sm:flex sm:justify-center">
             {" "}
-            <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            {/* <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Celebrating 10+ years of service.{" "}
               <a
                 href="#our-story"
@@ -33,7 +33,7 @@ const About = () => {
                 <span className="absolute inset-0" aria-hidden="true" />
                 Read our story <span aria-hidden="true">&rarr;</span>
               </a>
-            </div>
+            </div> */}
           </div>
           {/* Main Heading */}
           <div className="text-center">
@@ -107,14 +107,14 @@ const About = () => {
               </div>
 
               {/* Stats overlay */}
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
+              {/* <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-pink-600">10+</p>
                   <p className="text-sm font-medium text-gray-600">
                     Years of Service
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Content Section */}
