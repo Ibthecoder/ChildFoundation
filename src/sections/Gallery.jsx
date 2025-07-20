@@ -1,36 +1,4 @@
-import { useState, useRef } from "react";
-
 const Gallery = () => {
-  const initialImages = [
-    "youngmother3.jpg",
-    "youngmother1.jpg",
-    "aboutImg2.jpg",
-    "youngmother2.jpg",
-    "aboutImg.png",
-    "aboutImg1.png",
-    "schoolImg3.jpg",
-    "AboutImg11.jpg",
-    "schoolImg1.jpg",
-    "Hero-img.png",
-    "img14.jpg",
-    "img3.jpg",
-  ];
-
-  const [galleryImages, setGalleryImages] = useState(initialImages);
-  const [uploadedImages, setUploadedImages] = useState([]);
-  const fileInputRef = useRef(null);
-
-  const handleUploadClick = () => {
-    fileInputRef.current.click();
-  };
-
-  const handleImageUpload = (event) => {
-    const files = event.target.files;
-    const uploaded = Array.from(files).map((file) => URL.createObjectURL(file));
-
-    setUploadedImages((prev) => [...uploaded, ...prev]); // prepend so new images show first
-  };
-
   return (
     <section className="min-h-screen bg-gradient-to-b from-pink-50 to-white px-4 sm:px-6 lg:px-12 py-12">
       {/* Title */}
@@ -55,18 +23,42 @@ const Gallery = () => {
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
-        {[...uploadedImages, ...galleryImages].map((img, idx) => (
-          <div
-            key={idx}
-            className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105"
-          >
-            <img
-              src={typeof img === "string" && img.startsWith("blob") ? img : `./src/assets/images/${img}`}
-              alt={`gallery-${idx}`}
-              className="w-full h-72 object-cover rounded-3xl transition duration-500 ease-in-out"
-            />
-          </div>
-        ))}
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/youngmother3.jpg" alt="Young Mother 3" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/youngmother1.jpg" alt="Young Mother 1" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/aboutImg2.jpg" alt="About 2" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets//images/youngmother2.jpg" alt="Young Mother 2" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/aboutImg.png" alt="About" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/aboutImg1.png" alt="About 1" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/schoolImg3.jpg" alt="School 3" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/AboutImg11.jpg" alt="About 11" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/schoolImg1.jpg" alt="School 1" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/Hero-img.png" alt="Hero" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/img14.jpg" alt="Img14" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
+        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+          <img src="./src/assets/images/img3.jpg" alt="Img3" className="w-full h-72 object-cover rounded-3xl" />
+        </div>
       </div>
 
       {/* Inspirational Quote */}
@@ -76,24 +68,23 @@ const Gallery = () => {
         </p>
       </div>
 
-      {/* CTA Upload Section */}
+      {/* Upload Call to Action (non-functional) */}
       <div className="bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl px-6 py-10 text-white text-center shadow-lg">
         <h2 className="text-3xl font-bold mb-2">📸 Share Your Moment</h2>
         <p className="mb-4">
           Got a memory worth showing? Tag us on Instagram or upload it now!
         </p>
-        <button
-          onClick={handleUploadClick}
-          className="bg-white text-pink-600 font-semibold px-6 py-2 rounded-full hover:bg-pink-50 transition"
+        <label
+          htmlFor="imageUpload"
+          className="cursor-pointer bg-white text-pink-600 font-semibold px-6 py-2 rounded-full hover:bg-pink-50 transition"
         >
           Upload Now
-        </button>
+        </label>
         <input
+          id="imageUpload"
           type="file"
           accept="image/*"
           multiple
-          ref={fileInputRef}
-          onChange={handleImageUpload}
           className="hidden"
         />
       </div>
