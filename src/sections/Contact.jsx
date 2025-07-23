@@ -86,17 +86,24 @@ const Contact = () => {
 
             <div className="flex items-start gap-3">
               <Phone className="text-blue-500 mt-1" />
-              <p>09137042786</p>
+              <a href="tel:+2349137042786">09137042786</a>
             </div>
 
             <div className="flex items-start gap-3">
               <Mail className="text-green-500 mt-1" />
-              <p>ymothershaven@gmail.com</p>
+              <a href="mailto:ymothershaven@gmail.com" target="blank">
+                ymothershaven@gmail.com
+              </a>
             </div>
 
             <div className="flex items-start gap-3">
               <Instagram className="text-purple-500 mt-1" />
-              <p>@yourinstagramhandle</p>
+              <a
+                href="https://www.instagram.com/young.mothershaven/"
+                target="blank"
+              >
+                @young.mothershaven
+              </a>
             </div>
           </div>
         </div>
