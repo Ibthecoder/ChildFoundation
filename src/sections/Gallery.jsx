@@ -1,3 +1,17 @@
+import {
+  aboutaImg4,
+  aboutImg6,
+  HeroImg1,
+  AboutImg11,
+  schoolImg,
+  schoolimg2,
+  schoolimg3,
+  youngmother1,
+  youngmother2,
+  youngmother3,
+  schoolImg4,
+} from "../assets/images/image";
+
 const Gallery = () => {
   return (
     <section className="min-h-screen bg-gradient-to-b from-pink-50 to-white px-4 sm:px-6 lg:px-12 py-12">
@@ -11,53 +25,103 @@ const Gallery = () => {
 
       {/* Filter Tags */}
       <div className="flex flex-wrap justify-center gap-3 mb-10">
-        {["All", "Fun", "Friends", "School", "Events", "Inspiration"].map((tag) => (
-          <span
-            key={tag}
-            className="px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium cursor-pointer hover:bg-pink-200 transition"
-          >
-            #{tag}
-          </span>
-        ))}
+        {["All", "Fun", "Friends", "School", "Events", "Inspiration"].map(
+          (tag) => (
+            <span
+              key={tag}
+              className="px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium cursor-pointer hover:bg-pink-200 transition"
+            >
+              #{tag}
+            </span>
+          ),
+        )}
       </div>
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/youngmother3.jpg" alt="Young Mother 3" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={aboutaImg4}
+            alt="Young Mother 3"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/youngmother1.jpg" alt="Young Mother 1" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={aboutImg6}
+            alt="Young Mother 1"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/aboutImg2.jpg" alt="About 2" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={HeroImg1}
+            alt="About"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets//images/youngmother2.jpg" alt="Young Mother 2" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={AboutImg11}
+            alt="Young Mother 2"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/aboutImg.png" alt="About" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={schoolImg}
+            alt="About"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/aboutImg1.png" alt="About 1" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={schoolimg2}
+            alt="About 1"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/schoolImg3.jpg" alt="School 3" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={schoolimg3}
+            alt="School 3"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/AboutImg11.jpg" alt="About 11" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={youngmother1}
+            alt="About 11"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/schoolImg1.jpg" alt="School 1" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={youngmother2}
+            alt="School 1"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/Hero-img.png" alt="Hero" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={youngmother3}
+            alt="Hero"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/img14.jpg" alt="Img14" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={aboutaImg4}
+            alt="Img14"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
         <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
-          <img src="./src/assets/images/img3.jpg" alt="Img3" className="w-full h-72 object-cover rounded-3xl" />
+          <img
+            src={schoolImg4}
+            alt="Img3"
+            className="w-full h-72 object-cover rounded-3xl"
+          />
         </div>
       </div>
 
