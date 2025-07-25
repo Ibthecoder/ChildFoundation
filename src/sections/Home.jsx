@@ -22,22 +22,7 @@ const Home = () => {
           <div class="lg:pr-8">
             <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
               <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-                Welcome To Young Mother
-                <span class="inline">
-                  <img
-                    class="inline w-auto h-8 sm:h-10 lg:h-12"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-1.svg"
-                    alt="shape-1"
-                  />
-                </span>
-                & Child Haven Foundation
-                <span class="inline">
-                  <img
-                    class="inline w-auto h-8 sm:h-10 lg:h-11"
-                    src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/4/shape-2.svg"
-                    alt="shape-2"
-                  />
-                </span>
+                Welcome To Young Mother & child Haven Foundation
               </h1>
               <p class="mt-6 text-base font-normal leading-7 text-gray-900">
                 A place of hope, a light so true, For mothers strong and
@@ -106,7 +91,7 @@ const Home = () => {
             </div>
             <h2 className="mt-6 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
               Empowering Young Mothers & Guilding Teenage girls towards a
-              brother future
+              brighter future
             </h2>
             <p className="mt-4 text-base leading-relaxed text-gray-600 sm:text-lg sm:mt-6">
               Through faith-based mentoring, life skills training, school

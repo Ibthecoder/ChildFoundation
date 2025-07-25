@@ -11,7 +11,6 @@ import {
   youngmother3,
   schoolImg4,
 } from "../assets/images/image";
-
 const Gallery = () => {
   return (
     <section className="min-h-screen bg-gradient-to-b from-pink-50 to-white px-4 sm:px-6 lg:px-12 py-12">
@@ -88,7 +87,7 @@ const Gallery = () => {
             className="w-full h-72 object-cover rounded-3xl"
           />
         </div>
-        <div className="overflow-hidden rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
+        <div className="overflow-hid den rounded-3xl bg-white shadow-md shadow-pink-100 hover:shadow-pink-300 transition-all duration-300 cursor-pointer transform hover:-translate-y-1 hover:scale-105">
           <img
             src={youngmother1}
             alt="About 11"
@@ -133,7 +132,7 @@ const Gallery = () => {
       </div>
 
       {/* Upload Call to Action (non-functional) */}
-      <div className="bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl px-6 py-10 text-white text-center shadow-lg">
+      {/* <div className="bg-gradient-to-r from-pink-400 to-purple-500 rounded-3xl px-6 py-10 text-white text-center shadow-lg">
         <h2 className="text-3xl font-bold mb-2">📸 Share Your Moment</h2>
         <p className="mb-4">
           Got a memory worth showing? Tag us on Instagram or upload it now!
@@ -151,7 +150,7 @@ const Gallery = () => {
           multiple
           className="hidden"
         />
-      </div>
+      </div> */}
     </section>
   );
 };
