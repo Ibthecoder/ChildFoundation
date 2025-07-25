@@ -25,10 +25,11 @@ const Home = () => {
                 Welcome To Young Mother & child Haven Foundation
               </h1>
               <p class="mt-6 text-base font-normal leading-7 text-gray-900">
-                A place of hope, a light so true, For mothers strong and
-                children too. With love and grace, we stand and guide, Through
-                every storm, we're by your side. Together we heal, together we
-                grow.
+                At Young Mother & Child Haven Foundation, we believe every young
+                girl and mother deserves to feel safe, supported, and empowered.
+                We are a faith-driven, purpose-led non-profit committed to
+                nurturing the spirit, soul, and potential of young mothers and
+                children across Nigeria and beyond.
               </p>
 
               {/* <p class="mt-8 text-base font-bold text-gray-900">
