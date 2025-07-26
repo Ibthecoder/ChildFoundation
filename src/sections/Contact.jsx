@@ -87,7 +87,7 @@ const Contact = () => {
             <div className="flex items-start gap-3">
               <Phone className="text-blue-500 mt-1" />
               <a href="tel:+2349137042786">09137042786</a>
-            </div>
+            </div> 
 
             <div className="flex items-start gap-3">
               <Mail className="text-green-500 mt-1" />
