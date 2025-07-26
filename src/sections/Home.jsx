@@ -12,6 +12,7 @@ import AboutUs from "./AboutUs";
 import ProgramUs from "./ProgramUs";
 import GetInvolved from "./GetInvolved";
 import NavbarCheck from "./NavbarCheck";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -20,10 +21,24 @@ const Home = () => {
         <div class="relative z-10 px-4 py-12 sm:py-16 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-20 xl:py-28 lg:grid lg:grid-cols-2">
           {/* <!-- Left content --> */}
           <div class="lg:pr-8">
-            <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-              <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl lg:text-5xl">
-                Welcome To Young Mother & child Haven Foundation
-              </h1>
+            <div class="">
+              <motion.h1
+                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+                className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight text-center"
+              >
+                <span className="block">Welcome to</span>
+                <motion.span
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5, duration: 1 }}
+                  className="block mt-2 text-pink-600 hover:text-pink-400 transition-colors duration-500"
+                >
+                  Young Mother & Child Haven Foundation
+                </motion.span>
+              </motion.h1>
+
               <p class="mt-6 text-base font-normal leading-7 text-gray-900">
                 At Young Mother & Child Haven Foundation, we believe every young
                 girl and mother deserves to feel safe, supported, and empowered.
