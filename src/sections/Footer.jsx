@@ -4,7 +4,7 @@ const Footer = () => {
     <>
       <footer className="bg-white">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center gap-4 rounded-lg bg-[rgb(251,171,185)] p-6 shadow-lg sm:flex-row sm:justify-between">
+          {/* <div className="flex flex-col items-center gap-4 rounded-lg bg-[rgb(251,171,185)] p-6 shadow-lg sm:flex-row sm:justify-between">
             <strong className="text-xl text-white sm:text-xl">
               {" "}
               Do you have a question?{" "}
@@ -30,7 +30,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-          </div>
+          </div> */}
 
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="text-center sm:text-left">
@@ -42,7 +42,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"
                   >
-                    Company History
+                    How we began
                   </a>
                 </li>
 
@@ -52,7 +52,7 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Meet the Team{" "}
+                    Our vision and mission{" "}
                   </a>
                 </li>
 
@@ -61,7 +61,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"
                   >
-                    Employee Handbook
+                    Meet of Volunteers
                   </a>
                 </li>
 
@@ -71,14 +71,23 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Careers{" "}
+                    Meet our Directors{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75"
+                    href="#"
+                  >
+                    {" "}
+                    Our outreaches{" "}
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-900">Our Services</p>
+              <p className="text-lg font-medium text-gray-900">Our Programs</p>
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
@@ -86,7 +95,7 @@ const Footer = () => {
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"
                   >
-                    Web Development
+                    Empowerment
                   </a>
                 </li>
 
@@ -96,7 +105,7 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Web Design{" "}
+                    School visitation{" "}
                   </a>
                 </li>
 
@@ -106,7 +115,7 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Marketing{" "}
+                    Outreach{" "}
                   </a>
                 </li>
 
@@ -116,7 +125,16 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Google Ads{" "}
+                    International Girl Child Day{" "}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75"
+                    href="#"
+                  >
+                    {" "}
+                    Conference{" "}
                   </a>
                 </li>
               </ul>
@@ -132,7 +150,7 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Online Guides{" "}
+                    Upcoming events{" "}
                   </a>
                 </li>
 
@@ -151,26 +169,7 @@ const Footer = () => {
                     href="#"
                   >
                     {" "}
-                    Forum{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    {" "}
-                    Downloads{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
-                  >
-                    Upcoming Events
+                    How to sponsor/partner{" "}
                   </a>
                 </li>
               </ul>
@@ -200,7 +199,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                {/* <li>
                   <a
                     className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="#"
@@ -215,7 +214,7 @@ const Footer = () => {
                       <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
                     </span>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

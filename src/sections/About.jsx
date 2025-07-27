@@ -7,6 +7,7 @@ import ibukunTaiwo from "../assets/images/ibukunoluwa-taiwo.jpg";
 import damilolaKarounwi from "../assets/images/damilola-karounwi.jpg";
 import tundeRhema from "../assets/images/tunde-rhema.jpg";
 import oluwatoyinFalaiye from "../assets/images/oluwatoyin-falaiye.jpg";
+import nwamakaelkanah from "../assets/images/nwamaka-elkanah.jpg";
 
 const About = () => {
   const teamMembers = [
@@ -37,6 +38,11 @@ const About = () => {
       title:
         "Lawyer and Advocate & Convener, Young Mother and Child Haven Foundation",
       image: oluwatoyinFalaiye,
+    },
+    {
+      name: "Nwamaka Elkanah",
+      title: "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: nwamakaelkanah,
     },
   ];
 
