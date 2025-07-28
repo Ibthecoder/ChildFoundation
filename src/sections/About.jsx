@@ -41,7 +41,8 @@ const About = () => {
     },
     {
       name: "Nwamaka Elkanah",
-      title: "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      title:
+        "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
       image: nwamakaelkanah,
     },
   ];
@@ -91,10 +92,7 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <section
-        id="about-content"
-        className="py-16 bg-white sm:py-20 lg:py-28"
-      >
+      <section id="about-content" className="py-16 bg-white sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-wider text-pink-600 uppercase bg-pink-100 rounded-full">
@@ -102,9 +100,7 @@ const About = () => {
             </span>
             <h1 className="text-5xl font-bold text-gray-900">
               About{" "}
-              <span className="text-pink-500">
-                Young Mother & Child Haven
-              </span>
+              <span className="text-pink-500">Young Mother & Child Haven</span>
             </h1>
             <div className="mt-6 h-1.5 w-24 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full"></div>
           </div>
@@ -195,30 +191,38 @@ const About = () => {
       <section className="py-20 bg-pink-50" id="team">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-pink-600">Meet Our Team</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Meet <span className="text-pink-600">Our Team</span>
+            </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              The passionate and dedicated individuals leading our mission to uplift and empower young mothers and children.
+              The passionate and dedicated individuals leading our mission to
+              uplift and empower young mothers and children.
             </p>
             <div className="mt-6 h-1.5 w-24 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="relative group h-80 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
               >
-                <div className="w-24 h-24 mx-auto mb-4">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="rounded-full object-cover w-full h-full border-4 border-pink-200 shadow-sm"
-                  />
+                {/* Team member image */}
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+
+                {/* Overlay with name and title */}
+                <div className="absolute inset-0 flex flex-col bg-black opacity-60 justify-end p-4 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-pink-400 drop-shadow-lg">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm text-purple-400 drop-shadow-md">
+                    {member.title}
+                  </p>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800">
-                  {member.name}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600">{member.title}</p>
               </div>
             ))}
           </div>
