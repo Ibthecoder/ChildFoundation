@@ -8,7 +8,9 @@ import damilolaKarounwi from "../assets/images/damilola-karounwi.jpg";
 import tundeRhema from "../assets/images/tunde-rhema.jpg";
 import oluwatoyinFalaiye from "../assets/images/oluwatoyin-falaiye.jpg";
 import nwamakaelkanah from "../assets/images/nwamaka-elkanah.jpg";
-
+import oluwabukolaodulaja from "../assets/images/oluwabukola-odulaja.jpg";
+import taiwogbemisolalyndia from "../assets/images/taiwo-gbemisola-lyndia.jpg"
+import dorcasolutosin from "../assets/images/dorcas-olutosin.jpg"
 const About = () => {
   const teamMembers = [
     {
@@ -44,6 +46,24 @@ const About = () => {
       title:
         "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
       image: nwamakaelkanah,
+    },
+    {
+      name: "Oluwabukola Odulaja",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: oluwabukolaodulaja,
+    },
+    {
+      name: "Taiwo Gbemisola Lyndia",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: taiwogbemisolalyndia,
+    },
+    {
+      name: "Dorcas Olutosin",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: dorcasolutosin,
     },
   ];
 
@@ -190,9 +210,10 @@ const About = () => {
       {/* Our Team Section */}
       <section className="py-20 bg-pink-50" id="team">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Board of Directors Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-gray-900">
-              Meet <span className="text-pink-600">Our Team</span>
+              Board <span className="text-pink-600">of Directors</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               The passionate and dedicated individuals leading our mission to
@@ -201,28 +222,62 @@ const About = () => {
             <div className="mt-6 h-1.5 w-24 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {teamMembers.map((member, index) => (
+          {/* Board of Directors Grid */}
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-16">
+            {teamMembers.slice(0, 5).map((member, index) => (
               <div
                 key={index}
-                className="relative group h-80 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
+                className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
               >
-                {/* Team member image */}
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-
-                {/* Overlay with name and title */}
-                <div className="absolute inset-0 flex flex-col bg-black opacity-60 justify-end p-4 transition-all duration-300">
-                  <h3 className="text-lg font-semibold text-pink-400 drop-shadow-lg">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm text-purple-400 drop-shadow-md">
-                    {member.title}
-                  </p>
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {member.name}
+                </h3>
+                <p className="text-sm text-pink-500 font-medium mt-1">
+                  {member.title}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Sponsors Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-gray-900">
+              Our <span className="text-blue-600">Sponsors</span>
+            </h2>
+            <p className="mt-4 text-md text-gray-600 max-w-2xl mx-auto">
+              We are grateful to our sponsors for their unwavering support in
+              helping us reach more lives.
+            </p>
+            <div className="mt-6 h-1.5 w-20 bg-gradient-to-r from-blue-500 to-pink-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Sponsors Grid */}
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {teamMembers.slice(5).map((member, index) => (
+              <div
+                key={index + 5}
+                className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
+              >
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {member.name}
+                </h3>
+                <p className="text-sm text-pink-500 font-medium mt-1">
+                  {member.title}
+                </p>
               </div>
             ))}
           </div>
