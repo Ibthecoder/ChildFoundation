@@ -8,7 +8,9 @@ import damilolaKarounwi from "../assets/images/damilola-karounwi.jpg";
 import tundeRhema from "../assets/images/tunde-rhema.jpg";
 import oluwatoyinFalaiye from "../assets/images/oluwatoyin-falaiye.jpg";
 import nwamakaelkanah from "../assets/images/nwamaka-elkanah.jpg";
-
+import oluwabukolaodulaja from "../assets/images/oluwabukola-odulaja.jpg";
+import taiwogbemisolalyndia from "../assets/images/taiwo-gbemisola-lyndia.jpg"
+import dorcasolutosin from "../assets/images/dorcas-olutosin.jpg"
 const About = () => {
   const teamMembers = [
     {
@@ -41,8 +43,27 @@ const About = () => {
     },
     {
       name: "Nwamaka Elkanah",
-      title: "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      title:
+        "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
       image: nwamakaelkanah,
+    },
+    {
+      name: "Oluwabukola Odulaja",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: oluwabukolaodulaja,
+    },
+    {
+      name: "Taiwo Gbemisola Lyndia",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: taiwogbemisolalyndia,
+    },
+    {
+      name: "Dorcas Olutosin",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: dorcasolutosin,
     },
   ];
 
@@ -91,10 +112,7 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <section
-        id="about-content"
-        className="py-16 bg-white sm:py-20 lg:py-28"
-      >
+      <section id="about-content" className="py-16 bg-white sm:py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-2 mb-4 text-sm font-semibold tracking-wider text-pink-600 uppercase bg-pink-100 rounded-full">
@@ -102,9 +120,7 @@ const About = () => {
             </span>
             <h1 className="text-5xl font-bold text-gray-900">
               About{" "}
-              <span className="text-pink-500">
-                Young Mother & Child Haven
-              </span>
+              <span className="text-pink-500">Young Mother & Child Haven</span>
             </h1>
             <div className="mt-6 h-1.5 w-24 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full"></div>
           </div>
@@ -194,31 +210,74 @@ const About = () => {
       {/* Our Team Section */}
       <section className="py-20 bg-pink-50" id="team">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Board of Directors Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold text-pink-600">Meet Our Team</h2>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Board <span className="text-pink-600">of Directors</span>
+            </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-              The passionate and dedicated individuals leading our mission to uplift and empower young mothers and children.
+              The passionate and dedicated individuals leading our mission to
+              uplift and empower young mothers and children.
             </p>
             <div className="mt-6 h-1.5 w-24 bg-gradient-to-r from-pink-500 to-blue-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {teamMembers.map((member, index) => (
+          {/* Board of Directors Grid */}
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-16">
+            {teamMembers.slice(0, 5).map((member, index) => (
               <div
                 key={index}
-                className="bg-white border border-gray-200 rounded-xl shadow-lg p-6 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
               >
-                <div className="w-24 h-24 mx-auto mb-4">
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-md">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="rounded-full object-cover w-full h-full border-4 border-pink-200 shadow-sm"
+                    className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-gray-800">
                   {member.name}
                 </h3>
-                <p className="mt-2 text-sm text-gray-600">{member.title}</p>
+                <p className="text-sm text-pink-500 font-medium mt-1">
+                  {member.title}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Sponsors Heading */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-extrabold text-gray-900">
+              Our <span className="text-blue-600">Sponsors</span>
+            </h2>
+            <p className="mt-4 text-md text-gray-600 max-w-2xl mx-auto">
+              We are grateful to our sponsors for their unwavering support in
+              helping us reach more lives.
+            </p>
+            <div className="mt-6 h-1.5 w-20 bg-gradient-to-r from-blue-500 to-pink-500 mx-auto rounded-full"></div>
+          </div>
+
+          {/* Sponsors Grid */}
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {teamMembers.slice(5).map((member, index) => (
+              <div
+                key={index + 5}
+                className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
+              >
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800">
+                  {member.name}
+                </h3>
+                <p className="text-sm text-pink-500 font-medium mt-1">
+                  {member.title}
+                </p>
               </div>
             ))}
           </div>
