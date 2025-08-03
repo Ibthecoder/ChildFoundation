@@ -15,7 +15,7 @@ const GetInvolved = () => {
               Support our programs for young mothers and girls.
             </p>
             <button className="bg-pink-600 text-white px-6 py-3 rounded-lg w-full">
-              Donate Now
+              <a href="tel:+2349137042786">Donate Now</a>
             </button>
           </div>
 
@@ -27,7 +27,7 @@ const GetInvolved = () => {
               Mentor, teach, or help with outreach programs.
             </p>
             <button className="bg-blue-600 text-white px-6 py-3 rounded-lg w-full">
-              Sign Up
+              <a href="mailto:ymothershaven@gmail.com">Sign Up</a>
             </button>
           </div>
         </div>
