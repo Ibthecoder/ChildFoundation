@@ -297,9 +297,7 @@ const YoungMothers = () => {
                 <a
                   href="#"
                   className="text-pink-600 font-medium flex items-center gap-2"
-                >
-                  Learn More <FiArrowRight />
-                </a>
+                ></a>
               </motion.div>
             ))}
           </div>
