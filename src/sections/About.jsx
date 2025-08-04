@@ -28,19 +28,19 @@ const About = () => {
     {
       name: "Pastor Damilola Karounwi",
       title:
-        "President of MMI, Young Mother and Child Haven Foundation",
+      "President of Menorah Ministries intl(MMI)",
       image: damilolaKarounwi,
     },
     {
       name: "Tunde Rhema",
       title:
-        "Leadership Expert, Young Mother and Child Haven Foundation",
+        "Leadership Expert",
       image: tundeRhema,
     },
     {
       name: "Oluwatoyin Falaiye",
       title:
-        "Lawyer and Advocate, Young Mother and Child Haven Foundation",
+        "Lawyer and Advocate",
       image: oluwatoyinFalaiye,
     },
     {
