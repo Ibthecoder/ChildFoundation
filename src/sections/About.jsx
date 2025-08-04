@@ -28,19 +28,19 @@ const About = () => {
     {
       name: "Pastor Damilola Karounwi",
       title:
-        "President of MMI & Convener, Young Mother and Child Haven Foundation",
+      "President of Menorah Ministries intl(MMI)",
       image: damilolaKarounwi,
     },
     {
       name: "Tunde Rhema",
       title:
-        "Leadership Expert & Convener, Young Mother and Child Haven Foundation",
+        "Leadership Expert",
       image: tundeRhema,
     },
     {
       name: "Oluwatoyin Falaiye",
       title:
-        "Lawyer and Advocate & Convener, Young Mother and Child Haven Foundation",
+        "Lawyer and Advocate",
       image: oluwatoyinFalaiye,
     },
     {
@@ -227,7 +227,7 @@ const About = () => {
           {/* Board of Directors Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-gray-900">
-              Our <span className="text-pink-600">Team</span>
+              Board of <span className="text-pink-600">Directors</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               The passionate and dedicated individuals leading our mission to
@@ -238,7 +238,7 @@ const About = () => {
 
           {/* Board of Directors Grid */}
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-16">
-            {teamMembers.slice(0, 7).map((member, index) => (
+            {teamMembers.slice(0, 6).map((member, index) => (
               <div
                 key={index}
                 className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
@@ -263,7 +263,7 @@ const About = () => {
           {/* Sponsors Heading */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Our <span className="text-blue-600">Sponsors</span>
+              Our <span className="text-blue-600">Team</span>
             </h2>
             <p className="mt-4 text-md text-gray-600 max-w-2xl mx-auto">
               We are grateful to our sponsors for their unwavering support in
@@ -274,7 +274,7 @@ const About = () => {
 
           {/* Sponsors Grid */}
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {teamMembers.slice(7).map((member, index) => (
+            {teamMembers.slice(6).map((member, index) => (
               <div
                 key={index + 5}
                 className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
