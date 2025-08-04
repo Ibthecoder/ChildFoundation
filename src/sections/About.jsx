@@ -11,6 +11,8 @@ import nwamakaelkanah from "../assets/images/nwamaka-elkanah.jpg";
 import oluwabukolaodulaja from "../assets/images/oluwabukola-odulaja.jpg";
 import taiwogbemisolalyndia from "../assets/images/taiwo-gbemisola-lyndia.jpg"
 import dorcasolutosin from "../assets/images/dorcas-olutosin.jpg"
+import taiwoishola from "../assets/images/taiwo-ishola.jpg"
+import akinboabiodun from "../assets/images/akinbo-abiodun.jpg"
 const About = () => {
   const teamMembers = [
     {
@@ -20,7 +22,7 @@ const About = () => {
     },
     {
       name: "Ibukunoluwa Taiwo",
-      title: "Convener, Young Mother and Child Haven Foundation",
+      title: "Managing Director Sentry Nig Limited and Convener, Young Mother and Child Haven Foundation",
       image: ibukunTaiwo,
     },
     {
@@ -44,8 +46,14 @@ const About = () => {
     {
       name: "Nwamaka Elkanah",
       title:
-        "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+        "Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
       image: nwamakaelkanah,
+    },
+    {
+      name: "Taiwo Ishola",
+      // title:
+      //   "Lawyer and Advocate & Convener, Young Mother and Child Haven Foundation",
+      image: taiwoishola,
     },
     {
       name: "Oluwabukola Odulaja",
@@ -65,6 +73,12 @@ const About = () => {
       //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
       image: dorcasolutosin,
     },
+    {
+      name: "Akinbo Abiodun",
+      // title:
+      //   "I'm a Ghost Writer and Lead Copywriter at LightLines(a copywriting and storytelling agency).",
+      image: akinboabiodun,
+    }
   ];
 
   return (
@@ -213,7 +227,7 @@ const About = () => {
           {/* Board of Directors Heading */}
           <div className="text-center mb-12">
             <h2 className="text-4xl font-extrabold text-gray-900">
-              Board <span className="text-pink-600">of Directors</span>
+              Our <span className="text-pink-600">Team</span>
             </h2>
             <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
               The passionate and dedicated individuals leading our mission to
@@ -224,7 +238,7 @@ const About = () => {
 
           {/* Board of Directors Grid */}
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-16">
-            {teamMembers.slice(0, 5).map((member, index) => (
+            {teamMembers.slice(0, 7).map((member, index) => (
               <div
                 key={index}
                 className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"
@@ -260,7 +274,7 @@ const About = () => {
 
           {/* Sponsors Grid */}
           <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {teamMembers.slice(5).map((member, index) => (
+            {teamMembers.slice(7).map((member, index) => (
               <div
                 key={index + 5}
                 className="bg-slate-100 p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center"

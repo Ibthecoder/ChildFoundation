@@ -1,11 +1,10 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import {
-  aboutaImg,
-  Hero,
   aboutaImg2,
   aboutaImg3,
-  aboutaImg4,
-  aboutaImg1,
 } from "../assets/images/image";
+
 const ProgramUs = () => {
   return (
     <section className="py-20 bg-gray-50">
@@ -18,19 +17,18 @@ const ProgramUs = () => {
         <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-pink-600">
-              GONGO Initiative
+              Supporting Young Mothers with:
             </h3>
-            <p className="text-gray-700 mb-6">
-              Supporting young mothers (ages 13-25) with:
-            </p>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-3 mb-6 text-gray-800">
               <li>• Parenting & vocational training</li>
               <li>• Child education support</li>
               <li>• Spiritual counseling</li>
             </ul>
-            <button className="bg-pink-600 text-white px-6 py-2 rounded-lg">
-              See Photos
-            </button>
+            <Link to="/gallery">
+              <button className="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition duration-300">
+                See Photos
+              </button>
+            </Link>
           </div>
           <img
             src={aboutaImg2}
@@ -53,18 +51,21 @@ const ProgramUs = () => {
             <p className="text-gray-700 mb-6">
               Educating secondary school girls on:
             </p>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-3 mb-6 text-gray-800">
               <li>• Pregnancy prevention</li>
               <li>• Self-esteem building</li>
               <li>• Career guidance</li>
             </ul>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg">
-              Learn More
-            </button>
+            <Link to="/gallery">
+              <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 export default ProgramUs;
