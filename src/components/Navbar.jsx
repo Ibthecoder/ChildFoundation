@@ -82,7 +82,7 @@ const Navbar = () => {
                                   className="font-semibold text-gray-900 block"
                                   onClick={() => setIsProgramsOpen(false)}
                                 >
-                                  Young Mothers (GONGO)
+                                  Young Mothers
                                   <span className="absolute inset-0"></span>
                                 </NavLink>
                                 <p className="mt-1 text-gray-600">
