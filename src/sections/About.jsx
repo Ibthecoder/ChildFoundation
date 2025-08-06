@@ -34,7 +34,7 @@ const About = () => {
     {
       name: "Tunde Rhema",
       title:
-        "Leadership Expert",
+        "Leadership Expertis in mental health, leadership, communication, publicity, community building, and guiding others in the matter of faith.",
       image: tundeRhema,
     },
     {
