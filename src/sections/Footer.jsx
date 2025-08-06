@@ -1,4 +1,5 @@
 import { brandlong } from "../assets/images/image";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -38,50 +39,48 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
                     How we began
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Our vision and mission{" "}
-                  </a>
+                    Our vision and mission
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    Meet of Volunteers
-                  </a>
+                    Meet our Volunteers
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Meet our Directors{" "}
-                  </a>
+                    Meet our Directors
+                  </Link>
                 </li>
+
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Our outreaches{" "}
-                  </a>
+                    Our outreaches
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -91,51 +90,48 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
+                    to="/YoungMothers"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
                     Empowerment
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/YoungMothers"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    School visitation{" "}
-                  </a>
+                    School visitation
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/YoungMothers"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Outreach{" "}
-                  </a>
+                    Outreach
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/YoungMothers"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    International Girl Child Day{" "}
-                  </a>
+                    International Girl Child Day
+                  </Link>
                 </li>
+
                 <li>
-                  <a
+                  <Link
+                    to="/YoungMothers"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Conference{" "}
-                  </a>
+                    Conference
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -147,30 +143,30 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
+                    href="https://forms.gle/eRJuqwhZSKKAwg3u6"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {" "}
-                    Upcoming events{" "}
+                    Upcoming events
                   </a>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
                     Conference Notes
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/about"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    How to sponsor/partner{" "}
-                  </a>
+                    How to sponsor/partner
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -180,41 +176,22 @@ const Footer = () => {
 
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
+                    to="/about#faq"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    FAQs{" "}
-                  </a>
+                    FAQs
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
+                    to="/contact"
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="#"
                   >
-                    {" "}
-                    Support{" "}
-                  </a>
+                    Support
+                  </Link>
                 </li>
-
-                {/* <li>
-                  <a
-                    className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="#"
-                  >
-                    <span className="text-gray-700 transition group-hover:text-gray-700/75">
-                      {" "}
-                      Live Chat{" "}
-                    </span>
-
-                    <span className="relative flex size-2">
-                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
-                      <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
-                    </span>
-                  </a>
-                </li> */}
               </ul>
             </div>
           </div>
